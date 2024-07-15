@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: "Iosevka Web", monospace;
+  font-size: 20px;
+}
+
+main {
+  box-sizing: border-box;
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0.5rem;
+}
+
+@font-face {
+  font-family: "Iosevka Web";
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("/assets/Iosevka-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "Lora Italic";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/Lora-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
+.lora {
+  font-family: "Lora Italic", serif;
+}
