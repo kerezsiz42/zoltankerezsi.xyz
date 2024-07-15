@@ -10,6 +10,10 @@ code {
   font-family: "Iosevka Web", monospace;
 }
 
+header {
+  padding: 1.5rem;
+}
+
 main {
   box-sizing: border-box;
   margin: auto;
@@ -32,20 +36,20 @@ a {
 h1 {
   font-family: "Verdana", sans-serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h2 {
   font-family: "Garamond", serif;
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: lightblue;
 }
 
 p {
-  line-height: 1.8;
-  font-size: 1.5rem;
+  line-height: 2;
+  font-size: 1.2rem;
 }
 
 @font-face {
