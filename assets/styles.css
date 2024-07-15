@@ -1,15 +1,51 @@
 body {
   margin: 0;
+  font-family: "Gergia", serif;
+  font-size: 16px;
+  color: gainsboro;
+  background-color: black;
+}
+
+code {
   font-family: "Iosevka Web", monospace;
-  font-size: 20px;
 }
 
 main {
   box-sizing: border-box;
   margin: auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 850px;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+a {
+  color: lightblue;
+}
+
+h1 {
+  font-family: "Verdana", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Garamond", serif;
+  font-weight: 100;
+  font-size: 2rem;
+  font-style: italic;
+  color: lightblue;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.5rem;
 }
 
 @font-face {
@@ -18,26 +54,4 @@ main {
   font-stretch: normal;
   font-style: normal;
   src: url("/assets/Iosevka-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/assets/Montserrat-VariableFont_wght.ttf") format("truetype");
-}
-
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-}
-
-@font-face {
-  font-family: "Lora Italic";
-  font-style: italic;
-  font-weight: 400;
-  src: url("/assets/Lora-Italic-VariableFont_wght.ttf") format("truetype");
-}
-
-.lora {
-  font-family: "Lora Italic", serif;
 }
