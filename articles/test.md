@@ -12,7 +12,8 @@ This is some basic, sample markdown.
 
 - More
 
-> Blockquote
+> <p>Words can be like X-rays, if you use them properly they’ll go through anything. You read and you’re pierced.</p>
+> <footer>--Aldous Huxley, <cite>Brave New World</cite></footer>
 
 And **bold**, _italics_, and even _italics_ and later **bold**. Even ~~strikethrough~~. [A link](https://markdowntohtml.com) to somewhere.
 

@@ -2,6 +2,7 @@
   --mantle: rgb(30, 30, 46);
   --sky: rgb(137, 220, 235);
   --crust: rgb(17, 17, 27);
+  --lavender: rgb(180, 190, 254);
 }
 
 body {
@@ -19,6 +20,29 @@ div.sourceCode {
 
 code {
   font-family: "Iosevka Web", monospace;
+}
+
+blockquote {
+  background-color: var(--mantle);
+  color: var(--lavender);
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+blockquote p::before {
+  content: "\201C";
+}
+
+blockquote p::after {
+  content: "\201D";
+}
+
+blockquote footer {
+  text-align: right;
+  color: gainsboro;
+  padding: 0.5rem;
 }
 
 header {
@@ -61,11 +85,10 @@ h2 {
 }
 
 h3 {
-  font-family: "Garamond", serif;
+  font-family: "Verdana", sans-serif;
   font-size: 1.3rem;
   margin: 0.5rem 0;
   color: gainsboro;
-  font-weight: 700;
 }
 
 p {

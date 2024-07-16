@@ -8,4 +8,5 @@
 
 ## My interests
 
-- https://outshift.cisco.com/blog/istio-operato
+- https://outshift.cisco.com/blog/istio-operator
+- https://www.thelatinlibrary.com/
