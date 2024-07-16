@@ -11,12 +11,14 @@ body {
   font-size: 16px;
   color: gainsboro;
   background-color: var(--crust);
+  overflow-wrap: break-word;
 }
 
 div.sourceCode {
   padding: 0.5rem;
   background-color: var(--mantle);
   border-radius: 3px;
+  overflow-x: scroll;
 }
 
 code {
