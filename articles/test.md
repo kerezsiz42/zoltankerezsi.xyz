@@ -31,6 +31,6 @@ Or inline code like `var foo = 'bar';`.
 
 Or an image of bears
 
-![bears](http://placebear.com/200/200)
+![An image of a bear](http://placebear.com/200/200)
 
 The end ...

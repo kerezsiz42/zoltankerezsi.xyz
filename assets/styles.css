@@ -16,6 +16,7 @@ body {
 div.sourceCode {
   padding: 0.5rem;
   background-color: var(--mantle);
+  border-radius: 3px;
 }
 
 code {
@@ -28,6 +29,7 @@ blockquote {
   margin: 0;
   padding: 1rem;
   font-style: italic;
+  border-radius: 3px;
 }
 
 blockquote p::before {
@@ -87,7 +89,7 @@ h3 {
   font-family: "Verdana", sans-serif;
   font-size: 1.3rem;
   margin: 0.5rem 0;
-  color: gainsboro;
+  color: var(--lavender);
 }
 
 p {
@@ -102,4 +104,22 @@ p {
   font-stretch: normal;
   font-style: normal;
   src: url("/assets/Iosevka-Regular.woff2") format("woff2");
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img {
+  max-width: 100%;
+  padding: 0.5rem;
+  background-color: var(--mantle);
+  border-radius: 3px;
+}
+
+figure figcaption {
+  font-style: italic;
 }
