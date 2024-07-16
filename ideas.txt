@@ -1,5 +1,0 @@
-Programming beyond best practices
-GCI versus Serverless Deployments
-Meta programming
-Links
-- https://outshift.cisco.com/blog/istio-operator

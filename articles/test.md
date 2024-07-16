@@ -4,23 +4,25 @@ This is some basic, sample markdown.
 
 ## Second Heading
 
- * Unordered lists, and:
-  1. One
-  1. Two
-  1. Three
- * More
+- Unordered lists, and:
+
+1.  One
+2.  Two
+3.  Three
+
+- More
 
 > Blockquote
 
-And **bold**, *italics*, and even *italics and later **bold***. Even ~~strikethrough~~. [A link](https://markdowntohtml.com) to somewhere.
+And **bold**, _italics_, and even _italics_ and later **bold**. Even ~~strikethrough~~. [A link](https://markdowntohtml.com) to somewhere.
 
 And code highlighting:
 
 ```js
-var foo = 'bar';
+var foo = "bar";
 
 function baz(s) {
-   return foo + ':' + s;
+  return foo + ":" + s;
 }
 ```
 
