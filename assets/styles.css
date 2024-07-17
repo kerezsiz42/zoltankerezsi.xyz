@@ -5,10 +5,23 @@
   --lavender: rgb(180, 190, 254);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Gergia", serif;
-  font-size: 16px;
+  font-family:
+    Fira Code,
+    Monaco,
+    Consolas,
+    Ubuntu Mono,
+    monospace;
+  font-size: 1rem;
+  font-variant-ligatures: contextual;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga", "tnum", "zero", "ss01", "locl", "calt";
+  letter-spacing: -0.02em;
   color: gainsboro;
   background-color: var(--crust);
   overflow-wrap: break-word;
@@ -19,10 +32,6 @@ div.sourceCode {
   background-color: var(--mantle);
   border-radius: 3px;
   overflow-x: scroll;
-}
-
-code {
-  font-family: "Iosevka Web", monospace;
 }
 
 blockquote {
@@ -52,8 +61,13 @@ header {
   padding: 1.5rem;
 }
 
+code {
+  background-color: var(--mantle);
+  border-radius: 3px;
+  padding: 0 0.25rem;
+}
+
 main {
-  box-sizing: border-box;
   margin: auto;
   width: 100%;
   max-width: 800px;
@@ -96,16 +110,8 @@ h3 {
 
 p {
   line-height: 2;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
   text-align: justify;
-}
-
-@font-face {
-  font-family: "Iosevka Web";
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  src: url("/assets/Iosevka-Regular.woff2") format("woff2");
 }
 
 figure {

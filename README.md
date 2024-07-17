@@ -10,3 +10,9 @@
 
 - https://outshift.cisco.com/blog/istio-operator
 - https://www.thelatinlibrary.com/
+- https://flatassembler.net
+
+## Other interesting blogs
+
+- https://hackeradam.com/
+- https://www.apalrd.net/
