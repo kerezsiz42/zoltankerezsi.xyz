@@ -16,3 +16,4 @@
 
 - https://hackeradam.com/
 - https://www.apalrd.net/
+- https://www.sensorsiot.org/

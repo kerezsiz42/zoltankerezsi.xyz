@@ -3,6 +3,9 @@
   --sky: rgb(137, 220, 235);
   --crust: rgb(17, 17, 27);
   --lavender: rgb(180, 190, 254);
+
+  --phoneWidth: (max-width: 684px);
+  --tabletWidth: (max-width: 900px);
 }
 
 * {
@@ -17,11 +20,12 @@ body {
     Consolas,
     Ubuntu Mono,
     monospace;
-  font-size: 1rem;
+  font-size: 16px;
   font-variant-ligatures: contextual;
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga", "tnum", "zero", "ss01", "locl", "calt";
   letter-spacing: -0.02em;
+  word-spacing: -0.02em;
   color: gainsboro;
   background-color: var(--crust);
   overflow-wrap: break-word;
