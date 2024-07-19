@@ -139,3 +139,21 @@ figure figcaption {
 time {
   font-style: italic;
 }
+
+.avatar-a {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 160px;
+  border-radius: 50%;
+}
+
+.avatar-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text);
+}
