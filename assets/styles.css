@@ -3,9 +3,11 @@
   --sky: rgb(137, 220, 235);
   --crust: rgb(17, 17, 27);
   --lavender: rgb(180, 190, 254);
+  --text: rgb(205, 214, 244);
 
-  --phoneWidth: (max-width: 684px);
-  --tabletWidth: (max-width: 900px);
+  --sans-serif-font: "Verdana", sans-serif;
+  --serif-font: "Garamond", serif;
+  --monospace-font: "Fira Code", "Monaco", "Consolas", "Ubuntu Mono", monospace;
 }
 
 * {
@@ -14,14 +16,14 @@
 
 body {
   margin: 0;
-  font-family: "Garamond", serif;
+  font-family: var(--sans-serif-font);
   font-size: 16px;
   font-variant-ligatures: contextual;
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga", "tnum", "zero", "ss01", "locl", "calt";
   letter-spacing: -0.02em;
   word-spacing: -0.02em;
-  color: gainsboro;
+  color: var(--text);
   background-color: var(--crust);
   overflow-wrap: break-word;
 }
@@ -36,6 +38,7 @@ div.sourceCode {
 
 blockquote {
   background-color: var(--mantle);
+  font-family: var(--serif-font);
   color: var(--lavender);
   margin: 0;
   padding: 1rem;
@@ -53,7 +56,7 @@ blockquote p::after {
 
 blockquote footer {
   text-align: right;
-  color: gainsboro;
+  color: var(--text);
   padding: 0.5rem;
 }
 
@@ -62,12 +65,7 @@ header {
 }
 
 code {
-  font-family:
-    Fira Code,
-    Monaco,
-    Consolas,
-    Ubuntu Mono,
-    monospace;
+  font-family: var(--monospace-font);
 }
 
 main {
@@ -86,17 +84,18 @@ footer {
 
 a {
   color: var(--sky);
+  font-family: inherit;
 }
 
 h1 {
-  font-family: "Verdana", sans-serif;
+  font-family: var(--sans-serif-font);
   font-weight: 700;
   font-size: 2rem;
   margin: 0.5rem 0;
 }
 
 h2 {
-  font-family: "Garamond", serif;
+  font-family: var(--serif-font);
   font-weight: 100;
   font-size: 1.5rem;
   font-style: italic;
@@ -105,13 +104,14 @@ h2 {
 }
 
 h3 {
-  font-family: "Verdana", sans-serif;
+  font-family: var(--sans-serif-font);
   font-size: 1.3rem;
   margin: 0.5rem 0;
   color: var(--lavender);
 }
 
 p {
+  font-family: var(--serif-font);
   line-height: 2;
   margin: 0.75rem 0;
   text-align: justify;
@@ -124,11 +124,12 @@ figure {
   align-items: center;
 }
 
-figure img {
+img {
   max-width: 100%;
   padding: 0.5rem;
   background-color: var(--mantle);
   border-radius: 3px;
+  margin: 1rem 0;
 }
 
 figure figcaption {
