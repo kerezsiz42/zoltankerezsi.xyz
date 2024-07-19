@@ -1,28 +1,27 @@
 #!/bin/sh
 
-echo "Rendering index.html..."
-ARTICLE=$(pandoc -f markdown index.md)
-export ARTICLE
-envsubst < template.html > index.html
+info() {
+  >&2 printf "%s [\033[34mINFO\033[0m] %s\n" "$(date --iso-8601=seconds)" "$1"
+}
 
-echo "Rendering markdown articles to html..."
-for i in articles/*.md
+info "Rendering markdown files to html..."
+for i in ./*.md
 do
   ARTICLE=$(pandoc -f markdown "$i")
+  export ARTICLE
   envsubst < template.html > "${i%.*}.html"
 done
 
-echo "HTTP server started on http://localhost:8080"
-busybox httpd -vfp 8080 &
+info "HTTP server started on http://localhost:8080"
+busybox httpd -vfp 8080 -c httpd.conf &
 pid=$!
 
 signal_handler() {
-    echo
-    echo "Received signal, terminating processes..."
-    kill $pid
-    wait $pid
-    echo "All processes terminated"
-    exit 0
+  info "Received signal, terminating processes..."
+  kill $pid
+  wait $pid
+  info "All processes terminated"
+  exit 0
 }
 
 trap signal_handler INT TERM
