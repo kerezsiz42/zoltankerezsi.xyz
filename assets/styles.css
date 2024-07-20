@@ -21,8 +21,8 @@ body {
   font-variant-ligatures: contextual;
   text-rendering: optimizeLegibility;
   font-feature-settings: "liga", "tnum", "zero", "ss01", "locl", "calt";
-  letter-spacing: -0.02em;
-  word-spacing: -0.02em;
+  /* letter-spacing: -0.02em; */
+  /* word-spacing: -0.02em; */
   color: var(--text);
   background-color: var(--crust);
   overflow-wrap: break-word;
@@ -32,7 +32,7 @@ div.sourceCode {
   padding: 0.5rem;
   background-color: var(--mantle);
   border-radius: 3px;
-  overflow-x: scroll;
+  overflow-x: auto;
   font-size: smaller;
 }
 

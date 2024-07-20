@@ -1,16 +1,8 @@
 #!/bin/sh
 
-info() {
-  >&2 printf "%s [\033[34mINFO\033[0m] %s\n" "$(date --iso-8601=seconds)" "$1"
-}
+. ./log.sh
 
-info "Rendering markdown files to html..."
-for i in ./*.md
-do
-  ARTICLE=$(pandoc -f markdown "$i")
-  export ARTICLE
-  envsubst < template.html > "${i%.*}.html"
-done
+./generate.sh &
 
 info "HTTP server started on http://localhost:8080"
 busybox httpd -vfp 8080 -c httpd.conf &
